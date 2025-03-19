@@ -1,59 +1,50 @@
-# V9Marzo25
+#🛠️ V10marzo25 - Autenticación con Supabase y Angular
+Este proyecto es una aplicación en Angular que implementa autenticación con Supabase, permitiendo iniciar sesión con Google y obtener un JWT Token.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+📌 Características
+✅ Login con Google mediante Supabase
+✅ Obtención de JWT Token tras autenticación
+✅ Manejo de sesiones con cookies
+✅ Cierre de sesión
+✅ Integración lista para expandir a un backend con Spring Boot
 
-## Development server
+🚀 Tecnologías utilizadas
+Angular
+Supabase (Autenticación y almacenamiento de usuario)
+TypeScript
+Bootstrap (para diseño).
 
-To start a local development server, run:
+📥 Instalación y configuración
+🔹 1. Clonar el repositorio
 
-```bash
+git clone https://github.com/tu-usuario/V10marzo25.git
+cd V10marzo25
+
+
+🔹 2. Instalar dependencias
+sh
+Copiar
+Editar
+npm install
+🔹 3. Configurar Supabase
+Crea un archivo src/environments/environment.ts y coloca tu configuración:
+
+typescript
+Copiar
+Editar
+export const environment = {
+  production: false,
+  supabaseUrl: 'https://TUSUPABASEURL.supabase.co',
+  supabaseAnonKey: 'TU_SUPABASE_ANON_KEY'
+};
+ 4. Ejecutar el proyecto
+sh
+Copiar
+Editar
 ng serve
-```
+Accede en el navegador a http://localhost:4200
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📌 Uso
+1️⃣ Iniciar sesión → Pulsa el botón "Login con Google"
+2️⃣ Verificación del usuario → Se obtiene un JWT Token
+3️⃣ Cerrar sesión → Borra el token y finaliza sesión
